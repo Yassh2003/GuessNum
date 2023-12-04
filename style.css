@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#main{
+    margin-top: 100px;
+    background-color: aqua;
+    min-height: 350px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 20px 20px 15px black;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+h1{
+    margin: 20px;
+}
+input{
+    height: 30px;
+    width: 200px;
+    margin: 0 10px;
+}
+h2{
+    margin: 10px;
+    display: none;
+}
+button{
+    margin-top: 10px;
+    width: 100px;
+    height: 20px;
+    background-color: black;
+    color: burlywood;
+    cursor: pointer;
+}
+h3{
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 10px;
+}
