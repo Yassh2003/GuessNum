@@ -1,8 +1,7 @@
 const guess = document.getElementById("Guess-input");
-console.log(guess);
+
 
 let x = parseInt(Math.random() * 100);
-console.log(x);
 
 let chances = 5;
 
@@ -19,7 +18,6 @@ let i = 0;
 function condition(){
     if(chances == 0){
         x = parseInt(Math.random() * 100);
-        console.log(x); 
         chances = 7;
         values = [];
         i = 0;
@@ -29,7 +27,6 @@ function condition(){
         return;
     }
     if(chances == 6){
-        console.log("hello");
         bt.textContent = "Submit";
         input.style.display = "block";
         chance.textContent = chances;
@@ -42,12 +39,9 @@ function condition(){
 
 function guessNumber(){
     let y = guess.value;
-    console.log(y);
     values.push(parseInt(y));
-    console.log(values);
     arr.style.display = "block";
     if(x === parseInt(y)){
-        console.log("Bingo..Aap Jeet chuke hai..");
         hint.textContent = "Bingo..Aap Jeet chuke hai..";
         bt.textContent = "New Game";
         input.style.display = "none";
@@ -56,15 +50,12 @@ function guessNumber(){
         return;
     }
     else if(x < parseInt(y)){
-        console.log("apni aukaat mai reh..")
         hint.textContent = "apni aukaat mai reh..";
     }
     else{
-        console.log("Thoda upper kr le bhai...")
         hint.textContent = "Thoda upper kr le bhai...";
     }
     if(chances == 5){
-        console.log("yash");
         prev.textContent = values[i];
     }
     else if(chances == 6){
