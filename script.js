@@ -15,6 +15,12 @@ const input = document.getElementById("Guess-input");
 let values = [];
 let i = 0;
 
+input.addEventListener("keyup", function(event){
+    if(event.keyCode === 13){
+        condition();
+    }
+})
+
 function condition(){
     if(chances == 0){
         x = parseInt(Math.random() * 100);
